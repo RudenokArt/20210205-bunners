@@ -56,6 +56,12 @@ button:hover{
   border-color:darken(@main_blue,10%);
 
 }
+.flex-wrapper,
+.header-top_item-wrapper{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
 .header-top{
   background-color: @main_blue;
   display: flex;
@@ -74,6 +80,9 @@ button:hover{
   h1{
     font-weight: bold;
   }
+}
+.header-top_item-wrapper{
+  min-width:30%;
 }
 .header-middle,
 .likslot-links{
@@ -118,15 +127,14 @@ button:hover{
  background-color:white;
  div{
   margin-bottom: 20px;
-}
+ }
 }
 .constructor-header{
   text-align: center;
 }
-.flex-wrapper{
-  display: flex;
-  flex-wrap:wrap;
-  justify-content:space-around;
+.image-item{
+  border-bottom:1px solid rgba(0,0,0,0.1);
+  margin-top: 20px;
 }
 .image-wrapper{
   position:relative;
@@ -186,4 +194,12 @@ input[type="radio"]{
   display:flex;
   justify-content:space-around;
   color:white;
+}
+.iomoney{
+  cursor: pointer;
+  text-align:center;
+  div{
+    font-weight: bold;
+    color:black;
+  }
 }

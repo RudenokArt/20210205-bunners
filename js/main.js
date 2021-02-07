@@ -6,21 +6,33 @@ colorPicker ();
 bunnerSize();
 $('#bunner-size').change(bunnerSize);
 $('input[type="text"]').bind('input',sloganText);
-$('input[name="color"]').change(colorPicker);
+$('input[class="color"]').change(colorPicker);
 
 
 // ===== FUNCTIONS =====
 function colorPicker () {
-  let radioArr=$('input[name="color"]');
-  let labelArr=$('.color');
+  let radioArr=$('input[class="color"]');
+  let labelArr=$('label[class="color"]');
   for (var i = 0; i < radioArr.length; i++) {
-    labelArr[i].style.borderColor=radioArr[i].id;
+    labelArr[i].style.borderColor=radioArr[i].value;
     labelArr[i].style.backgroundColor = 'transparent';
     if (radioArr[i].checked) {
-      labelArr[i].style.backgroundColor = radioArr[i].id;
-      bunner.textColor=radioArr[i].id;
+      labelArr[i].style.backgroundColor = radioArr[i].value;
     }
   }
+  setTextColor();
+}
+function setTextColor (argument) {
+  let arr=$('input[class="color"]');
+  let checkedArr=[];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].checked) {checkedArr.push(arr[i]);}
+  }
+  let divArr=$('div[class="slogan"]');
+  for (var i = 0; i < divArr.length; i++) {
+    divArr[i].style.color=checkedArr[i].value;
+  }
+  console.log(checkedArr);
 }
 function sloganText () {
   let inputArr=$('input[class="slogan"]');

@@ -25,16 +25,20 @@
 
  <div class="header">
    <div class="header-top">
-     <div class="header-top_item">
+    <div class="header-top_item-wrapper">
+      <div class="header-top_item">
       <div>
         <img src="img/logo.webp" alt="April_16">
       </div>
     </div>
-    <div class="header-top_item">
+     <div class="header-top_item">
       <div>
         <h1>Апрель 16</h1>
       </div>
     </div>
+    </div>
+     
+   
     <div class="header-top_item">
       <div>
         тел.: 555-555-555 <br>
@@ -106,114 +110,100 @@
     </div>
 
     <div>
-      <h4>Шаг 2. Выберите цвет текста:</h4>
-      <div class="color-picker">
-        <label class="color" for="rgb(0,0,0)">
-          <input type="radio" name="color" id="rgb(0,0,0)" checked="checked">
-        </label>
-        <label class="color" for="rgb(250,0,0)">
-          <input type="radio" name="color" id="rgb(250,0,0)">
-        </label>
-        <label class="color" for="rgb(0,250,0)">
-          <input type="radio" name="color" id="rgb(0,250,0)">
-        </label>
-        <label class="color" for="rgb(0,0,250)">
-          <input type="radio" name="color" id="rgb(0,0,250)">
-        </label>
-        <label class="color" for="rgb(250,250,0)">
-          <input type="radio" name="color" id="rgb(250,250,0)">
-        </label>
-        <label class="color" for="rgb(0,250,250)">
-          <input type="radio" name="color" id="rgb(0,250,250)">
-        </label>
-      </div>
-
-
-    </div>
-    
-    <div>
-      <h4>Шаг 3. Загрузите изображения (до 3-х шт. в формате jpg) 
+      <h4>Шаг 2. Загрузите изображения (до 3-х шт. в формате jpg) 
         <br> и придумайте слоган для каждго:</h4>
         <div>
-          <div>
-            <div class="image-wrapper">
-              <img src="" alt="Изображение не выбрано">
-              <div class="slogan"></div>
-            </div>
-            <div  class="image-download">
-             <div class="download-icon">
-              <i class="fa fa-upload" aria-hidden="true"></i>
-              Загрузить
-            </div>
-            <input type="file">
-          </div>
-          <div>
-            <input type="text" class="slogan" placeholder="слоган">
-          </div>
-          
-        </div>
-        <div>
-          <div class="image-wrapper">
-            <img src="" alt="Изображение не выбрано">
-            <div class="slogan"></div>
-          </div>
-          <div  class="image-download">
-           <div class="download-icon">
-            <i class="fa fa-upload" aria-hidden="true"></i>
-            Загрузить
-          </div>
-          <input type="file">
-        </div>
-        <div>
-          <input type="text" class="slogan" placeholder="слоган">
+          <?php include 'inclusions/image-item.php' ?>
+          <?php include 'inclusions/image-item.php' ?>
+          <?php include 'inclusions/image-item.php' ?>
+
         </div>
       </div>
+
       <div>
-        <div class="image-wrapper"><br>
-         <img src="" alt="Изображение не выбрано">
-         <div class="slogan"></div>
+        <div>
+         <h4>Шаг 3. Установите время анимации (в секундах):</h4>
        </div>
-       <div  class="image-download">
-         <div class="download-icon">
-          <i class="fa fa-upload" aria-hidden="true"></i>
-          Загрузить
-        </div>
-        <input type="file">
+       <div>
+         <select>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5" selected="selected">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+           <option value="8">8</option>
+           <option value="9">9</option>
+           <option value="10">10</option>
+         </select>
+       </div>
+
+     </div>
+     <div>
+      <h4>Уже почти все готово!</h4>
+    </div>
+    <div class="image-wrapper bunner-prewiew">
+      <img src="" alt="ПРЕДПРОСМОТР БАННЕРА">
+    </div>
+    <div>
+      <button>СОЗДАТЬ БАННЕР</button><br>
+      Ссылка на готовый баннер:<br>
+      <input type="text" class="slogan" placeholder="Заполните все поля!"><br>
+      Скопируйте и сохраните!
+    </div>
+    <div class="flex-wrapper">
+      <div class="iomoney">
+        <a href="https://yoomoney.ru/to/410014949986324">
+          <div>
+            <img src="img/iomoney.png" alt="Ю-money" width="200px;">
+          </div>
+          <div>
+            Если вам был полезен наш конструктор, <br>
+            вы можете поддержать проект <br>
+            сколько не жалко...
+            <img src="img/asker.jpg" alt=" " width="50">
+          </div>
+        </a>
       </div>
+    </div>
+    <div class="flex-wrapper">
       <div>
-        <input type="text" class="slogan" placeholder="слоган">
+        <h5>Мы в социальных сетях:</h5>
+        <div>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"><img src="img/viber.png" alt=" "></a>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="image-wrapper bunner-prewiew">
-  <img src="" alt="ПРЕДПРОСМОТР БАННЕРА">
-</div>
-<div>
-  <button>СОЗДАТЬ БАННЕР</button>
-</div>
-</div>
-</div>
 <div class="likslot-links">
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-    <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  </div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+</div>
 
 <div class="footer">
   <div>
-        Апрель 16 <br>
-        тел.: 555-555-555 <br>
-        email: email@email.email <br>
-        адрес: г. Москва, ул. Ленина, 50 <br>
-      </div>
+    Апрель 16 <br>
+    тел.: 555-555-555 <br>
+    email: email@email.email <br>
+    адрес: г. Москва, ул. Ленина, 50 <br>
+  </div>
   <div class="callback-form">
     <form>
       <div><h3>Напишите нам:</h3></div>

@@ -27,43 +27,50 @@
    <div class="header-top">
     <div class="header-top_item-wrapper">
       <div class="header-top_item">
-      <div>
-        <img src="img/logo.webp" alt="April_16">
+        <div>
+          <img src="img/logo.webp" alt="April_16">
+        </div>
+      </div>
+      <div class="header-top_item">
+        <div>
+          <h1>Апрель 16</h1>
+        </div>
       </div>
     </div>
-     <div class="header-top_item">
-      <div>
-        <h1>Апрель 16</h1>
-      </div>
-    </div>
-    </div>
-     
-   
+
+
     <div class="header-top_item">
-      <div>
-        тел.: 555-555-555 <br>
-        email: email@email.email <br>
-        адрес: г. Москва, ул. Ленина, 50 <br>
-      </div>
+      <div></div>
     </div>
   </div>
   <div class="header-middle">
-    <div><div><a href="#">НОВИНКИ</a></div></div>
-    <div><div><a href="#">ПОПУЛЯРНОЕ</a></div></div>
-    <div><div><a href="#">КАК ЗАРАБОТАТЬ В ИНТЕРНЕТЕ</a></div></div>
-    <div><div><a href="#">ПАРТНЕРСКИЕ ПРОГРАММЫ</a></div></div>
-    <div><div><a href="#">ИНВЕСТИРОВАНИЕ</a></div></div>
-    <div><div><a href="#">РЕКЛАМА И КУПЛЯ-ПРОДАЖА ГРУПП В СОЦСЕТЯХ</a></div></div>
-    <div><div><a href="#">ПРОДВИЖЕНИЕ В СОЦСЕТЯХ</a></div></div>
-    <div><div><a href="#">ВАШИ САЙТЫ, БЛОГИ, СТРАНИЦЫ</a></div></div>
-    <div><div><a href="#">УСЛУГИ ПО РЕКЛАМЕ</a></div></div>
-    <div><div><a href="#">РАЗРАБОТКА И ПРОДВИЖЕНИЕ САЙТОВ</a></div></div>
-    <div><div><a href="#">РАЗРАБОТКА И ПРОДВИЖЕНИЕ ВЕБ-САЙТОВ</a></div></div>
-    <div><div><a href="#">СЕТЕВОЙ МАРКЕТИНГ</a></div></div>
-    <div><div><a href="#">ФРИЛАНС УСЛУГИ</a></div></div>
-    <div><div><a href="#">ОБУЧАЮЩИЕ КУРСЫ, РЕПЕТИТОРЫ</a></div></div>
-    <div><div><a href="#">ДРУГОЕ</a></div></div>
+    <div><div><a href="#" target="_blank">НОВИНКИ</a></div></div>
+    <div><div><a href="#" target="_blank">ПОПУЛЯРНОЕ</a></div></div>
+    <div><div><a href="#" target="_blank">КАК ЗАРАБОТАТЬ В ИНТЕРНЕТЕ</a></div></div>
+    <div><div><a href="#" target="_blank">ПАРТНЕРСКИЕ ПРОГРАММЫ</a></div></div>
+    <div><div><a href="#" target="_blank">ИНВЕСТИРОВАНИЕ</a></div></div>
+    <div><div><a href="#" target="_blank">РЕКЛАМА И КУПЛЯ-ПРОДАЖА ГРУПП В СОЦСЕТЯХ</a></div></div>
+    <div><div><a href="#" target="_blank">ПРОДВИЖЕНИЕ В СОЦСЕТЯХ</a></div></div>
+    <div><div><a href="#" target="_blank">ВАШИ САЙТЫ, БЛОГИ, СТРАНИЦЫ</a></div></div>
+    <div><div><a href="#" target="_blank">УСЛУГИ ПО РЕКЛАМЕ</a></div></div>
+    <div><div><a href="#" target="_blank">РАЗРАБОТКА И ПРОДВИЖЕНИЕ САЙТОВ</a></div></div>
+    <div><div><a href="#" target="_blank">РАЗРАБОТКА И ПРОДВИЖЕНИЕ ВЕБ-САЙТОВ</a></div></div>
+    <div><div><a href="#" target="_blank">СЕТЕВОЙ МАРКЕТИНГ</a></div></div>
+    <div><div><a href="#" target="_blank">ФРИЛАНС УСЛУГИ</a></div></div>
+    <div><div><a href="#" target="_blank">ОБУЧАЮЩИЕ КУРСЫ, РЕПЕТИТОРЫ</a></div></div>
+    <div><div><a href="#" target="_blank">ДРУГОЕ</a></div></div>
   </div>
+  <div class="likslot-links">
+  <div><div><a href="#"  target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+</div>
   <div class="header-bottom">
     <div class="header-bottom_item">
       <div id="linkslot_312149">
@@ -89,7 +96,7 @@
       <h5>Создайте свой уникальный анимированный баннер в три шага:</h5>
     </div>
     <div>
-      <h4>Шаг 1. Выбирите размер баннера:</h4>
+      <h4>Шаг 1. Выберите размер баннера:</h4>
       <select name="" id="bunner-size">
         <option value="468x60">468x60</option>
         <option value="1000x90">1000x90</option>
@@ -111,7 +118,7 @@
 
     <div>
       <h4>Шаг 2. Загрузите изображения (до 3-х шт. в формате jpg) 
-        <br> и придумайте слоган для каждго:</h4>
+        <br> и придумайте слоган для каждого:</h4>
         <div>
           <?php include 'inclusions/image-item.php' ?>
           <?php include 'inclusions/image-item.php' ?>
@@ -149,18 +156,18 @@
     <div>
       <button>СОЗДАТЬ БАННЕР</button><br>
       Ссылка на готовый баннер:<br>
-      <input type="text" class="slogan" placeholder="Заполните все поля!"><br>
+      <input type="text" class="slogan"><br>
       Скопируйте и сохраните!
     </div>
     <div class="flex-wrapper">
       <div class="iomoney">
-        <a href="https://yoomoney.ru/to/410014949986324">
+        <a href="https://yoomoney.ru/to/410014949986324"  target="_blank">
           <div>
             <img src="img/iomoney.png" alt="Ю-money" width="200px;">
           </div>
           <div>
-            Если вам был полезен наш конструктор, <br>
-            вы можете поддержать проект <br>
+            Если Вам был полезен наш конструктор, <br>
+            Вы можете пожертвовать <br>
             сколько не жалко...
             <img src="img/asker.jpg" alt=" " width="50">
           </div>
@@ -171,39 +178,33 @@
       <div>
         <h5>Мы в социальных сетях:</h5>
         <div>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
-          <a href="#"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
+          <a href="#"  target="_blank"><img src="img/viber.png" alt=" "></a>
         </div>
       </div>
     </div>
   </div>
 </div>
 <div class="likslot-links">
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
-  <div><div><a href="#">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#"  target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
+  <div><div><a href="#" target="_blank">Ссылки от linksLot</a></div></div>
 </div>
 
 <div class="footer">
-  <div>
-    Апрель 16 <br>
-    тел.: 555-555-555 <br>
-    email: email@email.email <br>
-    адрес: г. Москва, ул. Ленина, 50 <br>
-  </div>
   <div class="callback-form">
     <form>
       <div><h3>Напишите нам:</h3></div>

@@ -120,10 +120,15 @@
       <h4>Шаг 2. Загрузите изображения (до 3-х шт. в формате jpg) 
         <br> и придумайте слоган для каждого:</h4>
         <div>
-          <?php include 'inclusions/image-item.php' ?>
-          <?php include 'inclusions/image-item.php' ?>
-          <?php include 'inclusions/image-item.php' ?>
-
+          <div id="view1">
+            <?php include 'inclusions/image-item.php' ?>
+          </div>
+          <div id="view2">
+            <?php include 'inclusions/image-item.php' ?>
+          </div>
+          <div id="view3">
+            <?php include 'inclusions/image-item.php' ?>
+          </div>
         </div>
       </div>
 
@@ -132,7 +137,7 @@
          <h4>Шаг 3. Установите время анимации (в секундах):</h4>
        </div>
        <div>
-         <select>
+         <select id="interval-anime">
            <option value="1">1</option>
            <option value="2">2</option>
            <option value="3">3</option>
@@ -151,7 +156,10 @@
       <h4>Уже почти все готово!</h4>
     </div>
     <div class="image-wrapper bunner-prewiew">
-      <img src="" alt="ПРЕДПРОСМОТР БАННЕРА">
+       <img src="galery/file1.jpg" class="bunner-image banner-image_active">
+       <img src="galery/file2.jpg" class="bunner-image banner-image_active">
+       <img src="galery/file3.jpg" class="bunner-image banner-image_active">
+
     </div>
     <div>
       <button>СОЗДАТЬ БАННЕР</button><br>

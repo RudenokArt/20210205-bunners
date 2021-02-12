@@ -129,7 +129,7 @@ button:hover{
  background-color:white;
  div{
   margin-bottom: 10px;
- }
+}
 }
 .constructor-header{
   text-align: center;
@@ -145,17 +145,13 @@ button:hover{
   overflow: hidden;
 }
 .bunner-image{
-    position:absolute;
-    top:0%;
-    left:0%;
-  }
-  .image-control {
-    margin:0 !important;
-    font-size:24px;
-    display:flex;
-    justify-content:center;
-  }
-div[class="slogan"]{
+  position:absolute;
+  top:0%;
+  left:0%;
+}
+
+div[class="slogan"],
+.slogan_active{
   position:absolute;
   text-align:center;
   top:0;
@@ -213,4 +209,31 @@ input[type="radio"]{
     font-weight: bold;
     color:black;
   }
+}
+.range-wrapper{
+  position:relative;
+  box-shadow:0px 0px 0px 2px @main_blue;
+  padding:0;
+  line-height: 0;
+  height:20px;
+  width: 175px;
+  div{
+    margin:0;
+  }
+  input{
+    position:absolute;
+    top:0;
+    left:0;
+    height:20px;
+    width: 175px;
+    opacity:0;
+  }
+}
+.range-track{
+  position:absolute;
+    top:0;
+    left:0;
+    height:20px;
+    width: 50%;
+    background-color:@main_blue;
 }

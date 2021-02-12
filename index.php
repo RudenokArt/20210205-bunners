@@ -159,6 +159,9 @@
        <img src="galery/file1.jpg" class="bunner-image banner-image_active">
        <img src="galery/file2.jpg" class="bunner-image banner-image_active">
        <img src="galery/file3.jpg" class="bunner-image banner-image_active">
+       <div class="slogan_active"></div>
+       <div class="slogan_active"></div>
+       <div class="slogan_active"></div>
 
     </div>
     <div>

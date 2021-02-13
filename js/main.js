@@ -1,7 +1,8 @@
 // ===== CLOBALS =====
 bunner={
   timer:5000,
-  slogan:['slogan1','slogan2','slogan3']
+  slogan:['slogan1','slogan2','slogan3'],
+  quantity:0,
 };
 anime={n:0,timer:5000};
 // ====== ACTIONS =====
@@ -10,6 +11,9 @@ bunnerSize();
 bunnerAnime();
 controlsDecor();
 imageScale();
+sloganText();
+setTextColor();
+setTextStyle();
 $('#bunner-size').change(bunnerSize);
 $('input[type="text"]').bind('input',sloganText);
 $('input[class="color"]').change(colorPicker);
@@ -19,8 +23,27 @@ $('input[class="vertical"').bind('input',imageScale);
 $('input[class="scale"').bind('input',imageScale);
 $('#interval-anime').change(setAnimeTime);
 $('input[name="range-input"]').bind('input',controlsDecor);
+$('.font-style,.font-size,.font-family').change(setTextStyle);
 
 // ===== FUNCTIONS =====
+function setTextStyle () {
+ let size=$('.font-size');
+ let style=$('.font-style');
+ let family=$('.font-family');
+ let slogan=$('div[class="slogan"]').children('div');
+ let sloganActive=$('div[class="slogan_active"]').children('div');
+ for (var i = 0; i < slogan.length; i++) {
+   slogan[i].style.fontSize = size[i].value+'px';
+   slogan[i].style.fontStyle = style[i].value;
+   slogan[i].style.fontWeight = style[i].value;
+   slogan[i].style.fontFamily = family[i].value;
+   sloganActive[i].style.fontSize = size[i].value+'px';
+   sloganActive[i].style.fontStyle = style[i].value;
+   sloganActive[i].style.fontWeight = style[i].value;
+   sloganActive[i].style.fontFamily = family[i].value;
+ }
+
+}
 function controlsDecor () {
   let rangeArr=$('input[name="range-input"]');
   let trackArr=$('.range-track');
@@ -36,16 +59,16 @@ function setAnimeTime () {
 function bunnerAnime () {
   let imageArr=$('.banner-image_active');
   let sloganArr=$('.slogan_active');
-   imageArr.css({'display':'none'});
-   sloganArr.css({'display':'none'});
-   imageArr[anime.n].style.display='block';
-   sloganArr[anime.n].style.display='block';
-   anime.n=anime.n+1;
-   if (anime.n<imageArr.length){setTimeout(bunnerAnime,bunner.timer);}
-   else if (anime.n>=imageArr.length) {
-    anime.n=0;
+  imageArr.css({'display':'none'});
+  sloganArr.css({'display':'none'});
+  imageArr[bunner.quantity].style.display='block';
+  sloganArr[bunner.quantity].style.display='flex';
+  bunner.quantity=bunner.quantity+1;
+  if (bunner.quantity<imageArr.length){setTimeout(bunnerAnime,bunner.timer);}
+  else if (bunner.quantity>=imageArr.length) {
+    bunner.quantity=0;
     setTimeout(bunnerAnime,bunner.timer);
-   }
+  }
 }
 function imageScale () {
   let horizontal=$('input[class="horizontal"');
@@ -62,8 +85,24 @@ function imageScale () {
   }
 }
 function imageLoad () {
-  let node=this.parentNode;
-  node.submit();
+ var formData = new FormData();
+ formData.append(this.name,this.files[0]);
+ var request = new XMLHttpRequest();
+ request.open("POST", "php/loader.php");
+ request.send(formData);
+ request.onreadystatechange=function (){
+  if (request.readyState==4 && request.status==200){
+    setImage();
+  }
+}
+}
+function setImage () {
+  let imageArr=$('.bunner-image');
+  let bunnerArr=$('.banner-image_active');
+  for (var i = 0; i < 3; i++) {
+    imageArr[i].setAttribute('src', 'galery/file'+[i+1]+'.jpg?'+Math.random());
+    bunnerArr[i].setAttribute('src', 'galery/file'+[i+1]+'.jpg?'+Math.random());
+  }
 }
 function colorPicker () {
   let radioArr=$('input[class="color"]');
@@ -92,12 +131,12 @@ function setTextColor () {
 }
 function sloganText () {
   let inputArr=$('input[class="slogan"]');
-  let divArr=$('div[class="slogan"]');
-  let bunnerArr=$('.slogan_active');
+  let divArr=$('div[class="slogan"]').children('div');
+  let bunnerArr=$('.slogan_active').children('div');
   for (var i = 0; i < divArr.length; i++) {
-    divArr[i].innerHTML='<div>'+inputArr[i].value+'</div>';
+    divArr[i].innerHTML=inputArr[i].value;
     divArr[i].style.color=bunner.textColor;
-    bunnerArr[i].innerHTML='<div>'+inputArr[i].value+'</div>';
+    bunnerArr[i].innerHTML=inputArr[i].value;
     bunnerArr[i].style.color=bunner.textColor;
   }
 }

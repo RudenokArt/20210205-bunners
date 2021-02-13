@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <!-- ===== BOOTSTRAP ===== -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet/less" type="text/css" href="style.less" />
@@ -12,7 +12,7 @@
   <!-- ===== jQuery ===== -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <!-- ===== PARALAX.JS ===== -->
-  <script src="parallax_js/parallax.min.js"></script>
+  <script src="parallax_js/parallax.min.js?<?php echo time()?>"></script>
 
 
 
@@ -20,9 +20,9 @@
   <title>Document</title>
 </head>
 <body>
- <div class="parallax-window" data-parallax="scroll"
- data-image-src="img/bg-main.jpg">
-
+ <!-- <div class="parallax-window" data-parallax="scroll"
+ data-image-src="img/bg-main.jpg"> -->
+ <div class="parallax-window"></div>
  <div class="header">
    <div class="header-top">
     <div class="header-top_item-wrapper">
@@ -159,9 +159,9 @@
        <img src="galery/file1.jpg" class="bunner-image banner-image_active">
        <img src="galery/file2.jpg" class="bunner-image banner-image_active">
        <img src="galery/file3.jpg" class="bunner-image banner-image_active">
-       <div class="slogan_active"></div>
-       <div class="slogan_active"></div>
-       <div class="slogan_active"></div>
+       <div class="slogan_active"><div></div></div>
+       <div class="slogan_active"><div></div></div>
+       <div class="slogan_active"><div></div></div>
 
     </div>
     <div>
@@ -231,7 +231,8 @@
     </form>
   </div>
 </div>
-</div>
+
+<!-- </div> -->
 
 </body>
 <script src="js/main.js?<?php echo time()?>"></script>

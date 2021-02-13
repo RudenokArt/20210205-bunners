@@ -118,7 +118,16 @@ button:hover{
   // border:1px solid red;
 }
 .parallax-window{
-  // padding-bottom:50px;
+  top:0;
+  left:0;
+  height:100vh;
+  width: 100vw;
+  position:fixed;
+  z-index: -1;
+  background-image:url(img/bg-main.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
 }
 .constructor{
  overflow:auto;
@@ -162,8 +171,8 @@ div[class="slogan"],
   div{
     margin:auto;
     font-family:"Comic Sans MS", cursive, sans-serif;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 16px;
+    // font-weight: bold;
   }
 }
 .image-download{
@@ -236,4 +245,12 @@ input[type="radio"]{
     height:20px;
     width: 50%;
     background-color:@main_blue;
+}
+.range-icon{
+  position:absolute;
+  top:10px;
+  left:5px;
+  color:white;
+  font-size:16px;
+
 }
